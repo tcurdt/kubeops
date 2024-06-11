@@ -9,7 +9,7 @@ FROM alpine:3
 
 COPY --from=kubectl /bin/kubectl /usr/local/bin/
 COPY --from=kustomize /app/kustomize /usr/local/bin/
-COPY --from=oci-resolve /bin/oci-resolve /usr/local/bin/
+COPY --from=oci-resolve /usr/local/bin/oci-resolve /usr/local/bin/
 
 RUN apk add --no-cache \
     curl \
