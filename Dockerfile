@@ -1,7 +1,7 @@
 # https://explore.ggcr.dev/?repo=registry.k8s.io
 
 # kubectl is supported within one minor version (older or newer) of kube-apiserver
-FROM registry.k8s.io/kubernetes/kubectl:v1.31.1 as kubectl
+FROM registry.k8s.io/kubernetes/kubectl:v1.31.2 as kubectl
 FROM registry.k8s.io/kustomize/kustomize:v5.4.3 as kustomize
 FROM ghcr.io/tcurdt/oci-resolve:v0.0.12 as oci-resolve
 
