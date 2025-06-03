@@ -13,7 +13,9 @@ COPY --from=oci-resolve /usr/local/bin/oci-resolve /usr/local/bin/
 
 RUN apk add --no-cache \
   curl \
-  xh
+  xh \
+  jq \
+  yq
 
 # RUN curl -L https://github.com/tcurdt/oci-resolve/releases/download/v0.0.1/oci-resolve_0.0.1_aarch64.apk > oci-resolve.apk && apk add --allow-untrusted ./oci-resolve.apk && rm oci-resolve.apk
 
