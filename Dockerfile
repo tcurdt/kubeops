@@ -2,7 +2,7 @@
 
 # kubectl is supported within one minor version (older or newer) of kube-apiserver
 FROM registry.k8s.io/kubernetes/kubectl:v1.35.0 AS kubectl
-FROM registry.k8s.io/kustomize/kustomize:v5.8.0 AS kustomize
+FROM registry.k8s.io/kustomize/kustomize:v5.8.1 AS kustomize
 FROM ghcr.io/tcurdt/oci-resolve:v0.0.14 AS oci-resolve
 
 FROM alpine:3
